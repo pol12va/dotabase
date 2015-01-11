@@ -2,13 +2,15 @@ package org.qulix.dotabase.entity;
 
 import org.qulix.dotabase.enums.Role;
 
+import java.util.Date;
+
 public class Player {
     private long id;
     private String nickname;
     private String firstName;
     private String lastName;
     private Role role;
-    private int age;
+    private Date dateOfBirth;
     private String country;
     private long teamId;
 
@@ -52,12 +54,12 @@ public class Player {
         this.role = role;
     }
 
-    public int getAge() {
-        return age;
+    public Date getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getCountry() {
